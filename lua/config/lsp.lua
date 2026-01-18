@@ -2,6 +2,7 @@
 -- NOTE: Modify the path for each LSP in the respective scripts
 -- located in the lsp folder.
 vim.lsp.enable({
+  'lua_ls',  -- Requires [https://github.com/luals/lua-language-server] on PATH.
   'clangd',
   'gopls',
   'basedpyright', -- Requires basedpyright-langserver and Ruff installed
