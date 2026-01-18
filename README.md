@@ -55,6 +55,7 @@ You must have the relevant Language Servers installed on your local machine's
 
 ### How to add a new language:
 1. Install the server via your package manager
-   (e.g., `brew install pyright` or `npm install -g typescript-language-server`).
+   (e.g., `brew install basedpyright` or
+    `npm install -g typescript-language-server`).
 2. The configuration will automatically pick up the server if it is available
    in your environment.
