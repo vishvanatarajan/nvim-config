@@ -7,7 +7,6 @@ development workflow.
 
 * **Plugin Manager:** [lazy.nvim](https://github.com/folke/lazy.nvim) for fast startup and easy management.
 * **LSP:** Built-in LSP support with `mason.nvim` for easy server installation.
-* **Completion:** `nvim-cmp` for intelligent code snippets and auto-completion.
 * **Treesitter:** Advanced syntax highlighting and code parsing.
 * **Telescope:** Fuzzy finding for files, buffers, and grep.
 * **UI:** Clean aesthetics with custom statusline and bufferline.
