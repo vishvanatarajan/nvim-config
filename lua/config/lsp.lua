@@ -1,15 +1,46 @@
 -- Enable the LSP servers
 vim.lsp.enable({
-  'lua_ls', -- Requires [https://github.com/luals/lua-language-server] on PATH.
-  'clangd', -- Relies on compile_commands.json being in the project root.
-  'gopls', -- Requires gopls on PATH.
-  'basedpyright', -- Requires basedpyright-langserver on PATH.
-  'rust_analyzer', -- Requires rust-analyzer on PATH.
-  'ts_ls', -- Requires typescript-langauge-server installed globally or locally
-  'html', -- Requires vscode-html-language-server installed globally or locally
-  'cssls', -- Requires vscode-css-langauge-server installed globally or locally
-  'jsonls', -- Requires vscode-json-langauge-server installed globally or local
-  'jdtls' -- Requires PATH variable to contain folder of jdtls binary.
+  -- Requires basedpyright-langserver to be installed and located on PATH.
+  'basedpyright',
+  -- Requires clangd to be installed and located on PATH.
+  -- Further, compile_commands.json must be present in the project root.
+  'clangd',
+  -- gopls binary must be installed and located on PATH.
+  'gopls',
+  -- [https://github.com/eclipse-jdtls/eclipse.jdt.ls] needs to be installed
+  -- and the jdtls binary located in
+  -- org.eclipse.jdt.ls.product/target/repository/bin must be located on PATH.
+  'jdtls',
+  -- [https://github.com/luals/lua-language-server] needs to be installed
+  -- and the lua-langauge-server binary must be located on PATH.
+  -- NOTE: On Windows on ARM, lua-language-server needs to be patched to be
+  -- built successfully.
+  'lua_ls',
+  -- rust-analyzer must be installed and located on PATH.
+  -- On projects that use a specific rust toolchain
+  -- (specified using rust-toolchain.toml), the correct version of the
+  -- Rust toolchain must be installed as specified in rust-toolchain.toml.
+  -- Otherwise, the LSP does not work correctly and throws errors.
+  'rust_analyzer',
+  -- [https://github.com/kristoff-it/superhtml.git] binary needs to be
+  -- installed and located on PATH.
+  'superhtml',
+  -- [https://github.com/tailwindlabs/tailwindcss-intellisense]
+  -- The binary can be installed globally using npm via:
+  -- npm install -g @tailwindcss/language-server
+  -- NOTE: Not having the language-server globally installed and enabling
+  -- the language server results in errors being reported in Neovim
+  -- during :checkhealth and :checkhealth vim.lsp.
+  -- Hence, it is highly recommended to have it installed globally.
+  'tailwindcss',
+  -- [https://github.com/yioneko/vtsls]
+  -- The binary can be installed globally using npm via:
+  -- npm install -g @vtsls/language-server
+  -- NOTE: Not having the language-server globally installed and enabling
+  -- the language server results in errors being reported in Neovim
+  -- during :checkhealth and :checkhealth vim.lsp.
+  -- Hence, it is highly recommended to have it installed globally.
+  'vtsls',
 })
 
 -- Setup LspAttach autocommand to enable features based on the client

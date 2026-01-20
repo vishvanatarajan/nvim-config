@@ -51,7 +51,7 @@ vim.lsp.config('jdtls', {
     local cmd = {
       jdtls_bin,
       '-configuration', jdtls_config_path,
-      '-data', data_dir,
+      '-data', data_dir
     }
 
     return vim.lsp.rpc.start(cmd, dispatchers, {
