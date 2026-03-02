@@ -12,6 +12,7 @@ local opt = vim.opt
 
 opt.autowrite = true -- Enable auto write
 opt.autoread = true -- Enable auto read
+opt.clipboard = "unnamedplus" -- Enable use of system clipboard
 opt.completeopt = 'menu,menuone,noselect'
 -- Hide * markup for bold and italic, but not markers with substitution
 opt.conceallevel = 2
