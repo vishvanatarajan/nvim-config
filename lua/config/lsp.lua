@@ -1,4 +1,4 @@
--- Enable the LSP servers
+-- Enable the LSP servers by uncommenting them
 vim.lsp.enable({
   -- Requires basedpyright-langserver to be installed and located on PATH.
   -- 'basedpyright',
