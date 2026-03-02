@@ -22,7 +22,7 @@ To use this configuration, ensure you have **Neovim 0.11.2+** installed.
 
 2. **Clone this repository**:
    ```bash
-   git clone [https://github.com/vishvanatarajan/nvim-config.git](https://github.com/vishvanatarajan/nvim-config.git) ~/.config/nvim
+   git clone https://github.com/vishvanatarajan/nvim-config.git ~/.config/nvim
    ```
 
 3. **Launch:**
@@ -38,6 +38,7 @@ To ensure all features (like fuzzy finding and syntax highlighting) work
 correctly, please install the following on your local machine:
 
 * **Ripgrep**: Required for Telescope's live grep functionality.
+* **FZF**: Required for Telescope's fuzzy file finding functionality.
 * **Nerd Fonts**: Highly recommended for file icons (e.g., JetBrainsMono Nerd Font).
 * **C Compiler**: `gcc`, `cc`, or `clang` is required for Treesitter parsers.
 * **Node.js & npm**: Often required for various language servers.

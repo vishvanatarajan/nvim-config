@@ -1,30 +1,37 @@
 -- Enable the LSP servers
 vim.lsp.enable({
   -- Requires basedpyright-langserver to be installed and located on PATH.
-  'basedpyright',
+  -- 'basedpyright',
+
   -- Requires clangd to be installed and located on PATH.
   -- Further, compile_commands.json must be present in the project root.
-  'clangd',
+  -- 'clangd',
+
   -- gopls binary must be installed and located on PATH.
-  'gopls',
+  -- 'gopls',
+
   -- [https://github.com/eclipse-jdtls/eclipse.jdt.ls] needs to be installed
   -- and the jdtls binary located in
   -- org.eclipse.jdt.ls.product/target/repository/bin must be located on PATH.
-  'jdtls',
+  -- 'jdtls',
+ 
   -- [https://github.com/luals/lua-language-server] needs to be installed
   -- and the lua-langauge-server binary must be located on PATH.
   -- NOTE: On Windows on ARM, lua-language-server needs to be patched to be
   -- built successfully.
-  'lua_ls',
+  -- 'lua_ls',
+ 
   -- rust-analyzer must be installed and located on PATH.
   -- On projects that use a specific rust toolchain
   -- (specified using rust-toolchain.toml), the correct version of the
   -- Rust toolchain must be installed as specified in rust-toolchain.toml.
   -- Otherwise, the LSP does not work correctly and throws errors.
-  'rust_analyzer',
+  -- 'rust_analyzer',
+ 
   -- [https://github.com/kristoff-it/superhtml.git] binary needs to be
   -- installed and located on PATH.
-  'superhtml',
+  -- 'superhtml',
+ 
   -- [https://github.com/tailwindlabs/tailwindcss-intellisense]
   -- The binary can be installed globally using npm via:
   -- npm install -g @tailwindcss/language-server
@@ -32,7 +39,8 @@ vim.lsp.enable({
   -- the language server results in errors being reported in Neovim
   -- during :checkhealth and :checkhealth vim.lsp.
   -- Hence, it is highly recommended to have it installed globally.
-  'tailwindcss',
+  -- 'tailwindcss',
+  
   -- [https://github.com/yioneko/vtsls]
   -- The binary can be installed globally using npm via:
   -- npm install -g @vtsls/language-server
@@ -40,7 +48,7 @@ vim.lsp.enable({
   -- the language server results in errors being reported in Neovim
   -- during :checkhealth and :checkhealth vim.lsp.
   -- Hence, it is highly recommended to have it installed globally.
-  'vtsls',
+  -- 'vtsls',
 })
 
 -- Setup LspAttach autocommand to enable features based on the client
